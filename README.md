@@ -11,6 +11,8 @@ A Clojure library for using emoji in Clojure code. Yes, this works. The challeng
 
 ## Compatibility
 
+As far as I know, Emojure is compatible with Clojure generally. That is, code will execute correctly, provided some intermediate representation doesn't munge it. Whether you can meaningfully edit it is a different story. 
+
 Emojure is visible in Sublime Text 2 running Mac OS X. It is also tested (and works) on Catnip IDE running on the latest build of Firefox.
 
 Catnip has a bug under Safari where the buffer won't scroll down; this is unrelated to emojure, and Safari is not a supported platform for Catnip, so unless someone (maybe me) figures out how to fix this, Sublime Text is the best way to edit Emojure code. The problem is probably in ace editor, if someone really wants to chase it down. 
