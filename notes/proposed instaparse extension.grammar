@@ -1,0 +1,4 @@
+(def paren-ab-hide-parens
+  (insta/parser
+    "paren-wrapped = <=:paren '('> seq-of-A-or-B <')'>
+     seq-of-A-or-B = ('a' | 'b')*"))
