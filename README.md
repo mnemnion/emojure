@@ -29,4 +29,4 @@ Think of emojure as a spice that you add at the end of cooking your code; it add
 
 Copyright © 2013 Sam Putman.
 
-Distributed under the Eclipse Public License, the same as Clojure.
+Distributed under the BSD 2 Clause License. 
