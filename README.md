@@ -25,6 +25,8 @@ Catnip has a bug under Safari where the buffer won't scroll down; this is unrela
 
 Emoji are displayed as the box character under Chrome, and until the buggy UCS-16 of the underlying Javascript engine gets patched or replaced, that's just how it is. 
 
+Emojure causes the lein repl to immediately explode and exit. This cannot be considered correct behavior. 
+
 Important note: The Mac version of Emacs does not show anything at all for emoji, at the present time. This is an unfortunate state of affairs and a potential security risk. At minimum, a code editor should display the 'character not found' box when it is unable to render a printing character, or indeed, one may argue, a non-printing one. 
 
 If your environment doesn't support Emojure, encourage them to fix this. Emoji is in the Unicode standard now, like it or not, and needs to be supported.
