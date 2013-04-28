@@ -12,18 +12,18 @@ A Clojure library for using emoji in Clojure code. Yes, this works. The challeng
 While "slurp" and "spit" are certainly descriptive, why not say
 
 ```clojure
-(💾 (do-something (📂 "project.clj")))
+(💾 (do-something (📂 "example.file")))
 ```
 
 ## Compatibility
 
 As far as I know, Emojure is compatible with Clojure generally. That is, code will execute correctly, provided some intermediate representation doesn't munge it. Whether you can meaningfully edit it is a different story. 
 
-Emojure is visible in Sublime Text 2 running Mac OS X. It is also tested (and works) on Catnip IDE running on the latest build of Firefox.
+Emojure is visible in Sublime Text 2 running Mac OS X. It is also tested (and works) on Catnip IDE running on the latest build of Firefox. This is, to my knowledge, the only way to edit Emojure code with REPL, making Catnip the most compliant Clojure environment in existence. 
 
-Catnip has a bug under Safari where the buffer won't scroll down; this is unrelated to emojure, and Safari is not a supported platform for Catnip, so unless someone (maybe me) figures out how to fix this, Sublime Text is the best way to edit Emojure code. The problem is probably in ace editor, if someone really wants to chase it down. 
+Catnip has a bug under Safari where the buffer won't scroll down; this is unrelated to emojure, and Safari is not a supported platform for Catnip.
 
-Emoji are displayed as the box character under Chrome, and until the buggy UCS-16 of the underlying Javascript engine gets patched or replaced, that's just how it is. 
+Emoji are displayed as the box character under Chrome, and until the buggy UCS-16 of the underlying Javascript engine gets patched or replaced, that's just how it is. This is also true of Light Table, most unfortunately, and for the same reason.
 
 Emojure causes the lein repl to immediately explode and exit. This cannot be considered correct behavior. 
 
