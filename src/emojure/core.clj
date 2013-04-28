@@ -17,6 +17,10 @@
 
 (def ^{:doc "rand-int"} 🎲 rand-int)
 
+(def ^{:doc "slurp"} 📂 slurp)
+
+(def ^{:doc "spit"} 💾 spit)
+
 (def 💭 :foo)
  
 (def 💍 :foo)

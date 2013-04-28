@@ -9,6 +9,12 @@ A Clojure library for using emoji in Clojure code. Yes, this works. The challeng
 (3 7 8) ;sample output
 ```
 
+While "slurp" and "spit" are certainly descriptive, why not say
+
+```clojure
+(💾 (do-something (📂 "project.clj")))
+```
+
 ## Compatibility
 
 As far as I know, Emojure is compatible with Clojure generally. That is, code will execute correctly, provided some intermediate representation doesn't munge it. Whether you can meaningfully edit it is a different story. 
