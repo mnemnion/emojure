@@ -35,6 +35,8 @@
               🚥 seq  
               🔄 eval
               🎲 rand-int
+              📂 slurp
+              💾 spit
                })
 
 
