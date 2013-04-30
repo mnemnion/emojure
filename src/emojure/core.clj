@@ -3,40 +3,19 @@
    :use     [clojure.set]
             ))
 
-(def ^{:doc "map"} 🌍 map)
-
-(def ^{:doc "reduce"} 🌀 reduce)
-
-(def ^{:doc "println"} 💬 println)
-
-(def ^{:doc "read"} 👀 read)
-
-(def ^{:doc "seq"} 🚥 seq) 
-
-(def ^{:doc "eval"} 🔄 eval)
-
-(def ^{:doc "rand-int"} 🎲 rand-int)
-
-(def ^{:doc "slurp"} 📂 slurp)
-
-(def ^{:doc "spit"} 💾 spit)
-
-(def 💭 :foo)
- 
-(def 💍 :foo)
-
-(def 👉 :apply)
-
      
-(def demoji { 👀 read
-              🌀 reduce
-              🌍 map
-              💬 println
-              🚥 seq  
-              🔄 eval
-              🎲 rand-int
-              📂 slurp
-              💾 spit
+(def demoji { '👀 'read
+              '👓 'load-string   
+              '🌀 'reduce
+              '🌍 'map
+              '💬 'println
+              '🚥 'seq  
+              '🔄 'eval
+              '🎲 'rand-int
+              '📂 'slurp
+              '💾 'spit
+              '🚗 'first
+              '🚋 'rest  ;my other car is a cdr
                })
 
 
@@ -48,3 +27,14 @@
 
 (def remoji (remojify demoji))
 
+          
+(defn- def-deref [x y]
+  (eval `(def  ~x ~y)))  
+
+(map def-deref (seq (keys demoji)) (seq (vals demoji)))
+                                              
+
+                                                 
+
+
+                    

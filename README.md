@@ -15,6 +15,16 @@ While "slurp" and "spit" are certainly descriptive, why not say
 (💾 (do-something (📂 "example.file")))
 ```
 
+##Philosophy
+
+Emojure is a whimsical demonstration of something I'm convinced has a future in coding: the use of literal icons within a textual codebase.
+
+Emoji is the camel's nose into allowing iconography, complete with color, into Unicode. This should be embraced and extended. The tendency within Web design to embed icons into a custom font can be normalized through the usual process and extended to give our large and expanding collection of widely-understood icons a place in Unicode.
+
+This will allow for code which is literally homoiconic, using glyphic representations of UI elements, for example. Why shouldn't your share handler have the same visual shape as the button on the user interface? Arguably, it should. 
+
+Plus: hey, it works! With some caveats:
+
 ## Compatibility
 
 As far as I know, Emojure is compatible with Clojure generally. That is, code will execute correctly, provided some intermediate representation doesn't munge it. Whether you can meaningfully edit it is a different story. 
